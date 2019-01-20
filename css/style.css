@@ -194,6 +194,7 @@ h3 {
 .service-item:hover .service-item-icon i {
   color: #fff;
   background-color: #732c7b;
+  transition-duration: 1s;
 }
 .service-item-title h3 {
   font-family: "Roboto Condensed", sans-serif;
@@ -552,9 +553,12 @@ form .form-control:focus {
   letter-spacing: 1px;
   font-weight: 700;
 }
-.navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
+.navbar-nav>li>a:hover {
     background: none;
     color: #732c7b;
+  }
+  .navbar-nav>li>a:focus {
+    background: none;
   }
 .navbar-toggle {
   background-color: rgba(0,0,0,0.1);
@@ -571,4 +575,12 @@ form .form-control:focus {
 .brilli-top-nav ul.navbar-nav > li.active >a  {
   color: #bb60c6;
 
+}
+.navbar-header>button {
+  visibility: hidden;
+}
+
+.content-title:hover .content-title-underline {
+  width: 100px;
+  transition: 1s;
 }
